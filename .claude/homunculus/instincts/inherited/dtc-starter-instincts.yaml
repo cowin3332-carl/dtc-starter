@@ -1,0 +1,106 @@
+# Instincts generated from https://github.com/cowin3332-carl/dtc-starter
+# Generated: 2026-08-09T15:01:27.209Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: dtc-starter-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/cowin3332-carl/dtc-starter
+---
+
+# Dtc Starter Commit Length
+
+## Action
+
+Keep commit messages concise (~12 characters)
+
+## Evidence
+
+- Average commit message length: 12 chars
+- Based on 2 commits
+
+---
+id: dtc-starter-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/cowin3332-carl/dtc-starter
+---
+
+# Dtc Starter Naming Files
+
+## Action
+
+Use kebab-case naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: kebab-case
+
+---
+id: dtc-starter-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/cowin3332-carl/dtc-starter
+---
+
+# Dtc Starter Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: dtc-starter-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/cowin3332-carl/dtc-starter
+---
+
+# Dtc Starter Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: dtc-starter-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/cowin3332-carl/dtc-starter
+---
+
+# Dtc Starter Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
